@@ -1,0 +1,71 @@
+
+Der Chefhistoriker ist immer bei der großen Weihnachtsschlittenfahrt dabei, aber seit Monaten hat ihn niemand mehr gesehen! Eine Gruppe älterer Historiker hat Sie gebeten, sie bei der Überprüfung der Orte zu begleiten, von denen sie glauben, dass er sie am ehesten besuchen würde.
+
+Jeder Ort wird auf der Liste mit einem Stern markiert. Sie gehen davon aus, dass der Oberste Historiker an einem der ersten fünfzig Orte sein muss, an denen sie nachsehen. Um also Weihnachten zu retten, musst du ihnen helfen, fünfzig Sterne auf ihrer Liste zu sammeln, bevor der Weihnachtsmann am 25. Dezember abfliegt.
+
+Sammle Sterne durch das Lösen von Rätseln. An jedem Tag des Adventskalenders werden zwei Rätsel zur Verfügung gestellt; das zweite Rätsel wird freigeschaltet, wenn du das erste gelöst hast. Für jedes Rätsel gibt es einen Stern. Viel Glück!
+
+Du bist noch nicht einmal losgefahren, da stößt die Gruppe der elbischen Seniorhistoriker schon auf ein Problem: Ihre Liste der zu überprüfenden Orte ist noch leer. Schließlich beschließt jemand, dass es am besten wäre, zuerst das Büro des Chefhistorikers zu überprüfen.
+
+Als sie das Büro betreten, stellen sie fest, dass der Chefhistoriker tatsächlich nirgends zu finden ist. Stattdessen entdecken die Elfen eine Reihe von Notizen und Listen mit historisch bedeutsamen Orten! Dies scheint die Planung zu sein, die der Chefhistoriker vor seiner Abreise gemacht hat. Vielleicht können diese Notizen dazu verwendet werden, die zu durchsuchenden Orte zu bestimmen?
+
+Im gesamten Büro des Chefs sind die historisch bedeutsamen Orte nicht namentlich, sondern mit einer eindeutigen Nummer, der so genannten Standort-ID, aufgeführt. Um sicherzugehen, dass sie nichts übersehen, teilen sich die Historiker in zwei Gruppen auf, die jeweils das Büro durchsuchen und versuchen, ihre eigene vollständige Liste der Standort-IDs zu erstellen.
+
+Es gibt nur ein Problem: Wenn man die beiden Listen nebeneinander hält (dein Rätseleinsatz), wird schnell klar, dass die Listen nicht sehr ähnlich sind. Vielleicht kannst du den Historikern helfen, ihre Listen abzugleichen?
+
+Zum Beispiel:
+
+3 4
+4 3
+2 5
+1 3
+3 9
+3 3
+Vielleicht weichen die Listen nur um einen kleinen Betrag voneinander ab! Um das herauszufinden, stelle die Zahlenpaare zusammen und messe, wie weit sie voneinander entfernt sind. Stelle die kleinste Zahl in der linken Liste mit der kleinsten Zahl in der rechten Liste zusammen, dann die zweitkleinste linke Zahl mit der zweitkleinsten rechten Zahl und so weiter.
+
+Ermitteln Sie innerhalb jedes Paares, wie weit die beiden Zahlen voneinander entfernt sind; Sie müssen alle diese Abstände addieren. Wenn du zum Beispiel eine 3 aus der linken Liste mit einer 7 aus der rechten Liste kombinierst, beträgt der Abstand 4; wenn du eine 9 mit einer 3 kombinierst, beträgt der Abstand 6.
+
+In der obigen Beispielliste würden die Paare und Abstände wie folgt aussehen:
+
+Die kleinste Zahl in der linken Liste ist 1, die kleinste Zahl in der rechten Liste ist 3. Der Abstand zwischen ihnen ist 2.
+Die zweitkleinste Zahl in der linken Liste ist 2, und die zweitkleinste Zahl in der rechten Liste ist ebenfalls 3. Der Abstand zwischen ihnen ist 1.
+Die drittkleinste Zahl in beiden Listen ist 3, also ist der Abstand zwischen ihnen 0.
+Die nächsten Zahlen, die zusammengehören, sind 3 und 4, der Abstand beträgt 1.
+Die fünftkleinsten Zahlen in beiden Listen sind 3 und 5, was einen Abstand von 2 ergibt.
+Schließlich ist die größte Zahl in der linken Liste die 4, während die größte Zahl in der rechten Liste die 9 ist; diese Zahlen haben einen Abstand von 5.
+Um den Gesamtabstand zwischen der linken und der rechten Liste zu ermitteln, addieren Sie die Abstände zwischen allen gefundenen Paaren. Im obigen Beispiel ist das 2 + 1 + 0 + 1 + 2 + 5, also insgesamt 11!
+
+Ihre linke und rechte Liste enthalten viele Ortskennungen. Wie groß ist der Gesamtabstand zwischen Ihren Listen?
+
+
+--- Zweiter Teil ---
+
+Ihre Analyse hat nur bestätigt, was alle befürchtet haben: Die beiden Listen mit den Standortkennungen sind tatsächlich sehr unterschiedlich.
+
+Oder sind sie es doch?
+
+Die Historiker sind sich nicht einig, welche Gruppe die Fehler gemacht hat oder wie die Handschrift des Chefs zu lesen ist, aber in der Aufregung fällt dir ein interessantes Detail auf: Viele Ortskennungen erscheinen in beiden Listen! Vielleicht handelt es sich bei den anderen Zahlen gar nicht um Ortskennungen, sondern um eine falsch interpretierte Handschrift.
+
+Diesmal müssen Sie genau herausfinden, wie oft jede Nummer aus der linken Liste in der rechten Liste auftaucht. Berechnen Sie eine Gesamtähnlichkeitsbewertung, indem Sie jede Zahl in der linken Liste addieren, nachdem Sie sie mit der Anzahl der Vorkommen dieser Zahl in der rechten Liste multipliziert haben.
+
+Hier sind noch einmal die gleichen Beispiellisten:
+
+3 4
+4 3
+2 5
+1 3
+3 9
+3 3
+
+Für diese Beispielauflistungen wird der Ähnlichkeitswert wie folgt ermittelt:
+
+Die erste Zahl in der linken Liste ist 3. Sie kommt in der rechten Liste dreimal vor, so dass sich die Ähnlichkeitszahl um 3 * 3 = 9 erhöht.
+Die zweite Zahl in der linken Liste ist 4. Sie erscheint einmal in der rechten Liste, also erhöht sich die Ähnlichkeitszahl um 4 * 1 = 4.
+Die dritte Zahl in der linken Liste ist 2. Sie erscheint nicht in der rechten Liste, so dass sich die Ähnlichkeitszahl nicht erhöht (2 * 0 = 0).
+Die vierte Zahl, 1, erscheint ebenfalls nicht in der rechten Liste.
+Die fünfte Zahl, 3, erscheint dreimal in der richtigen Liste; die Ähnlichkeitszahl erhöht sich um 9.
+Die letzte Zahl, 3, taucht dreimal in der richtigen Liste auf; die Ähnlichkeitszahl erhöht sich wieder um 9.
+Für diese Beispiellisten beträgt die Ähnlichkeitszahl am Ende dieses Prozesses also 31 (9 + 4 + 0 + 0 + 9 + 9).
+
+Betrachten Sie noch einmal Ihre linke und rechte Liste. Wie hoch ist ihr Ähnlichkeitswert?
+
