@@ -1,0 +1,52 @@
+Glücklicherweise ist der erste Ort, den die Historiker durchsuchen wollen, nicht weit vom Büro des Chefhistorikers entfernt.
+
+In der Kernfusions- und Kernspaltungsanlage „Red-Nosed Reindeer“ gibt es zwar keine Anzeichen für den Chefhistoriker, aber die Ingenieure dort rennen auf dich zu, sobald sie dich sehen. Offenbar erzählen sie immer noch von der Zeit, als Rudolph durch Molekularsynthese aus einem einzigen Elektron gerettet wurde.
+
+Sie fügen schnell hinzu, dass sie - da du ja bereits hier bist - deine Hilfe bei der Analyse einiger ungewöhnlicher Daten aus dem Red-Nosed-Reaktor sehr zu schätzen wüssten. Sie drehen sich um, um zu sehen, ob die Historiker auf Sie warten, aber sie scheinen sich bereits in Gruppen aufgeteilt zu haben, die jeden Winkel der Anlage durchsuchen. Du bietest deine Hilfe bei den ungewöhnlichen Daten an.
+
+Die ungewöhnlichen Daten (Ihre Rätseleingabe) bestehen aus vielen Berichten, ein Bericht pro Zeile. Jeder Bericht besteht aus einer Liste von Zahlen, die Ebenen genannt werden und durch Leerzeichen getrennt sind. Zum Beispiel:
+
+7 6 4 2 1
+1 2 7 8 9
+9 7 6 2 1
+1 3 2 4 5
+8 6 4 4 1
+1 3 6 7 9
+
+Diese Beispieldaten enthalten sechs Berichte mit jeweils fünf Ebenen.
+
+Die Ingenieure versuchen, herauszufinden, welche Berichte sicher sind. Die Sicherheitssysteme des Red-Nosed-Reaktors können nur Pegel tolerieren, die entweder allmählich ansteigen oder allmählich abfallen. Ein Bericht gilt also nur dann als sicher, wenn beide der folgenden Bedingungen erfüllt sind:
+
+Die Pegel sind entweder alle steigend oder alle fallend.
+Zwei benachbarte Pegel unterscheiden sich um mindestens eine und höchstens drei Stufen.
+Im obigen Beispiel können die Berichte durch Überprüfung dieser Regeln als sicher oder unsicher eingestuft werden:
+
+7 6 4 2 1: Sicher, weil die Stufen alle um 1 oder 2 abnehmen.
+1 2 7 8 9: Unsicher, weil 2 7 eine Erhöhung um 5 ist.
+9 7 6 2 1: Unsicher, weil 6 2 eine Abnahme von 4 ist.
+1 3 2 4 5: Unsicher, weil 1 3 eine Zunahme, 3 2 aber eine Abnahme ist.
+8 6 4 4 1: Unsicher, weil 4 4 weder eine Zunahme noch eine Abnahme ist.
+1 3 6 7 9: Sicher, weil die Werte alle um 1, 2 oder 3 steigen.
+In diesem Beispiel sind also 2 Berichte sicher.
+
+Analysieren Sie die ungewöhnlichen Daten der Ingenieure. Wie viele Berichte sind sicher?
+
+--- Zweiter Teil ---
+
+Die Ingenieure sind von der geringen Zahl der sicheren Meldungen überrascht, bis sie feststellen, dass sie vergessen haben, Ihnen vom Problemdämpfer zu erzählen.
+
+Der Problem Dampener ist ein im Reaktor montiertes Modul, das es den Reaktorsicherheitssystemen erlaubt, einen einzigen schlechten Wert in einem ansonsten sicheren Bericht zu tolerieren. Es ist so, als wäre der schlechte Wert nie aufgetreten!
+
+Es gelten dieselben Regeln wie zuvor, nur dass der Bericht als sicher gilt, wenn die Entfernung einer einzelnen Stufe aus einem unsicheren Bericht diesen sicher machen würde.
+
+Weitere Berichte aus dem obigen Beispiel sind nun sicher:
+
+7 6 4 2 1: Sicher ohne Entfernen einer Stufe.
+1 2 7 8 9: Unsicher, unabhängig davon, welche Stufe entfernt wird.
+9 7 6 2 1: Unsicher, unabhängig davon, welche Stufe entfernt wird.
+1 3 2 4 5: Sicher durch Entfernen der zweiten Stufe, 3.
+8 6 4 4 1: Sicher durch Entfernen der dritten Stufe, 4.
+1 3 6 7 9: Sicher, ohne eine Ebene zu entfernen.
+Dank des Problemdämpfers sind 4 Berichte tatsächlich sicher!
+
+Aktualisieren Sie Ihre Analyse, indem Sie Situationen behandeln, in denen der Problem Dampener eine einzelne Ebene aus unsicheren Berichten entfernen kann. Wie viele Berichte sind nun sicher?

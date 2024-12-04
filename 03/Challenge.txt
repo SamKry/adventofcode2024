@@ -1,0 +1,37 @@
+--- Tag 3: Überlegen Sie es sich ---
+
+„Unsere Computer haben Probleme, deshalb weiß ich nicht, ob wir noch einen Chefhistoriker auf Lager haben! Sie können aber gerne im Lager nachsehen“, sagt der leicht verwirrte Ladenbesitzer des Nordpol-Rodelverleihs. Die Historiker gehen hinaus, um sich umzusehen.
+
+Der Ladenbesitzer wendet sich an dich. „Könnten Sie sich vielleicht ansehen, warum unsere Computer wieder Probleme haben?“
+
+Der Computer scheint zu versuchen, ein Programm auszuführen, aber sein Speicher (Ihre Rätseleingabe) ist beschädigt. Alle Anweisungen sind durcheinandergeraten!
+
+Es scheint, als ob das Ziel des Programms nur darin besteht, einige Zahlen zu multiplizieren. Das tut es mit Anweisungen wie mul(X,Y), wobei X und Y jeweils 1-3 stellige Zahlen sind. Zum Beispiel multipliziert mul(44,46) 44 mit 46, um ein Ergebnis von 2024 zu erhalten. Ähnlich würde mul(123,4) 123 mit 4 multiplizieren.
+
+Da der Speicher des Programms jedoch beschädigt wurde, gibt es auch viele ungültige Zeichen, die ignoriert werden sollten, selbst wenn sie wie ein Teil einer Mul-Anweisung aussehen. Sequenzen wie mul(4*, mul(6,9!, ?(12,34), oder mul ( 2 , 4 ) bewirken nichts.
+
+Betrachten Sie zum Beispiel den folgenden Abschnitt des beschädigten Speichers:
+
+xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))
+Nur die vier hervorgehobenen Abschnitte sind echte mul-Anweisungen. Die Addition der Ergebnisse der einzelnen Befehle ergibt 161 (2*4 + 5*5 + 11*8 + 8*5).
+
+Durchsuchen Sie den beschädigten Speicher nach unkorrumpierten Mul-Anweisungen. Was erhalten Sie, wenn Sie alle Ergebnisse der Multiplikationen zusammenzählen?
+
+--- Zweiter Teil ---
+
+Beim Durchsuchen des beschädigten Speichers stellen Sie fest, dass auch einige der bedingten Anweisungen noch intakt sind. Wenn Sie einige der nicht beschädigten bedingten Anweisungen im Programm bearbeiten, können Sie vielleicht ein noch genaueres Ergebnis erzielen.
+
+Es gibt zwei neue Anweisungen, mit denen Sie umgehen müssen:
+
+Die do()-Anweisung ermöglicht zukünftige mul-Anweisungen.
+Die Anweisung don't() deaktiviert künftige Mul-Anweisungen.
+Nur die letzte do() oder don't() Anweisung ist gültig. Zu Beginn des Programms sind die Mul-Anweisungen aktiviert.
+
+Zum Beispiel:
+
+xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))
+Dieser beschädigte Speicher ähnelt dem Beispiel von vorhin, aber dieses Mal sind die Anweisungen mul(5,5) und mul(11,8) deaktiviert, weil ihnen eine don't()-Anweisung vorausgeht. Die anderen Mul-Anweisungen funktionieren normal, einschließlich derjenigen am Ende, die durch eine do()-Anweisung wieder aktiviert wird.
+
+Dieses Mal ist die Summe der Ergebnisse 48 (2*4 + 8*5).
+
+Behandeln Sie die neuen Anweisungen; was erhalten Sie, wenn Sie alle Ergebnisse nur der aktivierten Multiplikationen zusammenzählen?
