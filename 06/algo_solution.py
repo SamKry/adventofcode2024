@@ -1,7 +1,8 @@
 import numpy as np
 
-dafaFile1 = "06/data.txt"
+# dafaFile1 = "06/data.txt"
 # dafaFile1 = "06/data_small.txt"
+dafaFile1 = "06/Boulus/data_input.txt"
 def load_input():
     with open(dafaFile1, "r") as f:
         return f.read().strip()
