@@ -2,6 +2,7 @@ import re
 
 dafaFile1 = "05/data1.txt"
 # dafaFile1 = "05/data1_small.txt"
+dafaFile1 = "05/Boulus/rules_input.txt"
 
 """
 example
@@ -16,7 +17,7 @@ example
 
 dafaFile2 = "05/data2.txt"
 # dafaFile2 = "05/data2_small.txt"
-
+dafaFile2 = "05/Boulus/input.txt"
 """
 example
 97,61,53,29,13
