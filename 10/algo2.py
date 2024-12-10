@@ -1,19 +1,17 @@
 import numpy as np
 import array
 from pprint import pprint
+from utils import int2Array
 
 dafaFile = "10/data.txt"
-# dafaFile = "10/data_small.txt"
+dafaFile = "10/data_small.txt"
 
 
 
 
 dataArr = [] 
 
-with open(dafaFile) as f1:
-    for line in f1:
-        line = line.strip()
-        dataArr.append([int(x) for x in list(line)])
+dataArr = int2Array.to2DArray(dafaFile)
 
 pprint(dataArr)
 
