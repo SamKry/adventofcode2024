@@ -26,19 +26,26 @@ class int2Array:
         """
         with open(filename) as f:
             return [int(x) for x in f]
-
-
-    def toOneLineArray(filename):
+        
+    def  toOneLineArray(filename, sepator = None):
         """
         Returns:
             e.g. [1, 2, 3, 4, 5, 6, 7, 8, 9]
         """
-        with open(filename) as f:
-            arr = []
-            for line in f:
-                for x in line.strip():
-                    arr.append(int(x))
-            return arr
+        if sepator == None:
+            with open(filename) as f:
+                arr = []
+                for line in f:
+                    for x in line.strip():
+                        arr.append(int(x))
+                return arr
+        else:
+            with open(filename) as f:
+                arr = []
+                for line in f:
+                    for x in line.strip().split(sepator):
+                        arr.append(int(x))
+                return arr
 
 class char2Array:
     def to2DArray(filename, sepator = None):
