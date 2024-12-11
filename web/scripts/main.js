@@ -19,7 +19,7 @@ async function solveCurrentDay() {
   const outputDiv2 = document.getElementById('output-2');
 
   try {
-    const module = await import(`./algorithms/${day}.js`);
+    const module = await import(`../../javascript/${day}.js`);
     const result1 = module.solve1(input);
     const result2 = module.solve2(input);
     outputDiv1.textContent = `${result1}`;
