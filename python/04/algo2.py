@@ -1,8 +1,7 @@
 import re
 
-# dafaFile = "04/data.txt"
-# dafaFile = "04/data_small.txt"
-dafaFile = "04/Boulus/data.txt"
+dafaFile = "python/04/data.txt"
+dafaFile = "python/04/data_small.txt"
 # data example:
 """
 MMMSXXMASM
@@ -45,13 +44,11 @@ word = ["M", "A", "S"]
 def search(startX, startY, directionX, directionY):
     found = False
     for w in word:
-        if startX < 0 or startY < 0 or startX >= len(matrix) or startY >= len(matrix[startX]):
-            return 0
-        if matrix[startX][startY] != w:
+        if startX < 0 or startY < 0 or startX >= len(matrix) or startY >= len(matrix[startX]) or matrix[startX][startY] != w:
             return 0
         startX += directionX
         startY += directionY
-    print("Found at: ", startX, startY, directionX, directionY)
+    # print("Found at: ", startX, startY, directionX, directionY)
     return 1
 
 def countPairs(__foundAt_CenterOfWord):
