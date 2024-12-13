@@ -31,6 +31,7 @@ async function solveCurrentDay() {
   } catch (error) {
     outputDiv1.textContent = `Solution for day ${day} question 1 not implemented yet :/`;
     outputDiv2.textContent = `Solution for day ${day} question 2 not implemented yet ):`;
+    console.error(error);
   }
 }
 
