@@ -1,8 +1,8 @@
 async function loadAlgorithms() {
   const daySelector = document.getElementById('day-selector');
 
-  // 24 ...1
-  const days = Array.from({ length: 24 }, (_, i) => 24 - i);
+  // 1 ... 24
+  const days = Array.from({ length: 24 }, (_, i) => i + 1);
 
   days.forEach(day => {
     const option = document.createElement('option');
@@ -15,6 +15,10 @@ async function loadAlgorithms() {
 async function solveCurrentDay() {
   const day = document.getElementById('day-selector').value;
   const input = document.getElementById('input').value;
+  if (!input) {
+    alert('Please enter your input');
+    return;
+  }
   const outputDiv1 = document.getElementById('output-1');
   const outputDiv2 = document.getElementById('output-2');
 
@@ -27,7 +31,6 @@ async function solveCurrentDay() {
   } catch (error) {
     outputDiv1.textContent = `Solution for day ${day} question 1 not implemented yet :/`;
     outputDiv2.textContent = `Solution for day ${day} question 2 not implemented yet ):`;
-    console.error(error);
   }
 }
 
