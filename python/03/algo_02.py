@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-dafaFile = "03/data.txt"
-# dafaFile = "03/data_small.txt"
+dafaFile = "python/03/data.txt"
+# dafaFile = "python/03/data_small.txt"
 
 import re
 
