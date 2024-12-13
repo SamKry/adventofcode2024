@@ -1,8 +1,8 @@
 import re
 from itertools import product
 
-dafaFile = "07/data.txt"
-dafaFile = "07/data_small.txt"
+dafaFile = "python/07/data.txt"
+# dafaFile = "python/07/data_small.txt"
 
 
 """
