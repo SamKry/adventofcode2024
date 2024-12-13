@@ -1,6 +1,6 @@
 
 
-dafaFile = "02/data.txt"
+dafaFile = "python/02/data.txt"
 
 MAX_DIFF = 3
 

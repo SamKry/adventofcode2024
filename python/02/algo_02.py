@@ -1,6 +1,5 @@
-# dafaFile = "02/data.txt"
+dafaFile = "python/02/data.txt"
 # dafaFile = "02/data_small.txt"
-dafaFile = r'C:\Code\Personal\adventofcode2024\02\Boulus\data_file_1_test.txt'
 
 MAX_DIFF = 3
 
