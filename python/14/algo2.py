@@ -95,3 +95,4 @@ with open(dafaFile) as f:
         if not processSecAndMustContinue(dataArr, sec):
             print("Took: ", time.time() - start)
             exit(0)
+    print("Exceeded max seconds to run. Please check your input data")
