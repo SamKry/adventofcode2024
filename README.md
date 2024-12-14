@@ -1,6 +1,7 @@
 # adventofcode2024
 
+### Official AoC
 https://adventofcode.com
 
-### Website
+### My solver Website
 https://samkry.github.io/adventofcode2024/
