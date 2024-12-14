@@ -2,8 +2,8 @@
 # this aproach is copyed from https://github.com/Grecil/ElegantAoC24
 
 
-dafaFile = "13/data.txt"
-# dafaFile = "13/data_small.txt"
+dafaFile = "python/13/data.txt"
+# dafaFile = "python/13/data_small.txt"
 import sys
     
 with open(dafaFile, 'r') as file:

@@ -6,8 +6,8 @@ from utils import int2Array
 import re
 
 
-dafaFile = "13/data.txt"
-# dafaFile = "13/data_small.txt"
+dafaFile = "python/13/data.txt"
+# dafaFile = "python/13/data_small.txt"
 
 
 """
