@@ -4,13 +4,13 @@ from pprint import pprint
 from utils import char2Array
 from utils import int2Array
 
-dafaFile = "11/data.txt"
-# dafaFile = "11/data_small.txt"
+dafaFile = "python/11/data.txt"
+# dafaFile = "python/11/data_small.txt"
 
 
 
 
-dataArr = int2Array.toOneLineArray2(dafaFile, sepator=" ")
+dataArr = int2Array.toOneLineArray(dafaFile, sepator=" ")
 
 
 from functools import lru_cache
