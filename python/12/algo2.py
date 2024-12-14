@@ -97,7 +97,7 @@ class Grid:
 
         return total_price_perimeter, total_price_sides
 
-with open('12/data.txt') as f:
+with open('python/12/data.txt') as f:
     lines = [list(row) for row in f.read().splitlines()]
     garden = Grid(lines)
     price_perimeter, price_sides = garden.calculate_price_area_perimeter()
