@@ -2,8 +2,8 @@ import numpy as np
 import array
 from pprint import pprint
 
-dafaFile = "10/data.txt"
-# dafaFile = "10/data_small.txt"
+dafaFile = "python/10/data.txt"
+# dafaFile = "python/10/data_small.txt"
 
 
 

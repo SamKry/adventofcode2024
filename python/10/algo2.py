@@ -3,8 +3,8 @@ import array
 from pprint import pprint
 from utils import int2Array
 
-dafaFile = "10/data.txt"
-dafaFile = "10/data_small.txt"
+dafaFile = "python/10/data.txt"
+# dafaFile = "python/10/data_small.txt"
 
 
 
