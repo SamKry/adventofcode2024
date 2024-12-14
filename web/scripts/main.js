@@ -2,7 +2,7 @@ async function loadAlgorithms() {
   const daySelector = document.getElementById('day-selector');
 
   // Generate days 1 to 24
-  const days = Array.from({ length: 24 }, (_, i) => i + 1);
+  const days = [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 
   days.forEach(day => {
     const option = document.createElement('option');

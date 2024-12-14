@@ -2,45 +2,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300");
 
 body {
-	background-color: #0f0f23;
-	color: #cccccc;
-	font-family: "Source Code Pro", monospace;
-	font-weight: 300;
-	font-size: 14pt;
-	min-width: 60em;
+    background-color: #0f0f23;
+    color: #cccccc;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    font-size: 14pt;
+    min-width: 40em;
 }
 
 header,
 main {
-	-webkit-text-size-adjust: none;
-	margin-bottom: 2em;
-	max-width: 70%;
+    -webkit-text-size-adjust: none;
+    margin-bottom: 2em;
+    max-width: 70%;
 }
 
 h1,
 h2 {
-	font-size: 1em;
-	font-weight: normal;
-	color: #ffffff;
-	font-style: normal;
-	text-shadow: 0 0 5px #ffffff;
+    font-size: 1em;
+    font-weight: normal;
+    color: #ffffff;
+    font-style: normal;
+    text-shadow: 0 0 5px #ffffff;
 }
 
 /* Dropdown menu */
 label {
-	font-size: inherit;
-	color: #cccccc;
+    font-size: inherit;
+    color: #cccccc;
 }
 
 #day-selector {
-	background: #10101a;
-	color: #cccccc;
-	border: 1px solid #666666;
-	border-radius: 0;
-	font-family: inherit;
-	font-size: inherit;
-	margin-bottom: 10px;
-	padding: 0 8px;
+    background: #10101a;
+    color: #cccccc;
+    border: 1px solid #666666;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 10px;
+    padding: 0 8px;
 }
 
 select {
@@ -51,59 +51,77 @@ select {
 
 /* Textarea */
 textarea {
-	width: 100%;
-	height: 50vh;
-	min-height: 200px;
-	resize: none;
-	overflow-y: auto;
-	color: inherit;
-	border: 1px solid #666666;
-	background: #10101a;
-	padding: 0 2px;
-	font-family: inherit;
-	font-size: inherit;
-	margin: 0;
+    width: 100%;
+    height: 50vh;
+    min-height: 200px;
+    resize: none;
+    overflow-y: auto;
+    color: inherit;
+    border: 1px solid #666666;
+    background: #10101a;
+    padding: 0 2px;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    scrollbar-color: #333340 #0f0f23;
+    scrollbar-width: thin;
+    overflow: auto;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px !important;
+    background-color: #0f0f23 !important;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #333340 !important;
+    border-radius: 4px !important;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #666666 !important;
 }
 
 /* Button */
 button {
-	background: transparent;
-	border: 0;
-	font-family: inherit;
-	font-size: inherit;
-	margin: 0;
-	padding: 0;
-	color: #009900;
-	cursor: pointer;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    color: #009900;
+    cursor: pointer;
 }
 
 button:hover {
-	color: #99ff99;
+    color: #99ff99;
 }
 
 pre,
 code {
-	font-family: "Source Code Pro", monospace;
-	color: #ffff66;
-	/* position: relative; */
-	/* display: inline-block; */
-	margin: 0;
-	padding: 0;
-	border: 1px solid #333340;
-	background: #10101a;
+    font-family: "Source Code Pro", monospace;
+    color: #ffff66;
+    /* position: relative; */
+    /* display: inline-block; */
+    margin: 0;
+    padding: 0;
+    border: 1px solid #333340;
+    background: #10101a;
 }
 
 em {
-	color: #ffffff;
-	font-style: normal;
-	text-shadow: 0 0 5px #ffffff;
+    color: #ffffff;
+    font-style: normal;
+    text-shadow: 0 0 5px #ffffff;
 }
 
 a {
-	text-decoration: none;
-	color: #009900;
+    text-decoration: none;
+    color: #009900;
 }
+
 a:hover,
 a:focus {
-	color: #99ff99;
+    color: #99ff99;
 }
