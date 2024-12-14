@@ -3,8 +3,8 @@ import array
 
 import re
 
-dafaFile = "09/data.txt"
-# dafaFile = "09/data_small.txt"
+dafaFile = "python/09/data.txt"
+# dafaFile = "python/09/data_small.txt"
 
 """
 example:
