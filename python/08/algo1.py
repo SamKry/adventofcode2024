@@ -1,7 +1,7 @@
 from pprint import pprint
 
-dafaFile = "08/data.txt"
-# dafaFile = "08/data_small.txt"
+dafaFile = "python/08/data.txt"
+# dafaFile = "python/08/data_small.txt"
 
 """
 example:
