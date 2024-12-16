@@ -4,8 +4,8 @@ from pprint import pprint
 from utils import char2Array
 from utils import int2Array
 
-dafaFile = "/data.txt"
-# dafaFile = "/data_small.txt"
+dataFile = "python//data.txt"
+# dataFile = "python//data_small.txt"
 
 
 
